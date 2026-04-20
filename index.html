@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex - Buscador de Pokemones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    </nav>
+    <main class="pokedex-container">
+        <header class="header">
+            <h1> POKEDEX <img src="img/pokeball_shake.gif"> </h1> 
+            <p>Encuentra tu Pokémon</p>
+        </header>
+
+        <section class="search-container">
+            <img src="img/pikachu-bounce.gif">
+            <input type="text" id="searchInput" placeholder="Busca tu Pokemón">
+            <button id="clearSearch">Limpiar</button>
+        </section>
+
+        <aside class="filters">
+            <select id="typeFilter">
+                <option value="">Todos los tipos</option>
+                <option value="normal">Normal</option>
+                <option value="fire">Fuego</option>
+                <option value="water">Agua</option>
+                <option value="electric">Eléctrico</option>
+                <option value="grass">Planta</option>
+                <option value="ice">Hielo</option>
+                <option value="fighting">Lucha</option>
+                <option value="poison">Veneno</option>
+                <option value="ground">Tierra</option>
+                <option value="flying">Volador</option>
+                <option value="psychic">Psíquico</option>
+                <option value="bug">Bicho</option>
+                <option value="rock">Roca</option>
+                <option value="ghost">Fantasma</option>
+                <option value="dragon">Dragón</option>
+                <option value="dark">Siniestro</option>
+                <option value="steel">Acero</option>
+                <option value="fairy">Hada</option>
+            </select>
+        </aside>
+
+        <!-- Grid de Pokémon -->
+        <section class="pokemon-grid" id="pokemonGrid">
+            <!-- Los Pokémon se cargan dinámicamente -->
+        </section>
+
+        <!-- Modal de detalles -->
+        <section class="modal" id="pokemonModal">
+            <section class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <section id="modalBody"></section>
+            </section>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
